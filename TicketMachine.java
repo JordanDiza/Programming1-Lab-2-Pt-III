@@ -52,6 +52,7 @@ public class TicketMachine
     {
         if(amount > 0) {
             balance = balance + amount;
+            System.out.println("Use a positive amount rather than: " + amount);
         }
         else {
             System.out.println("Use a positive amount rather than: " + amount);
