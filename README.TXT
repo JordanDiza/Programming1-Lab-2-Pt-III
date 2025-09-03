@@ -51,4 +51,20 @@ if (price > budget) {
 }
 I feel like the easier method is the one used it 57 because it is way more simple than the 58 version
 #59 well if I run refundBalance id expect it to give me my money back. When the balance is at 0 there is no money to refund this theres no balance to give back
-#60
+#60 public int getBalance()
+    {
+        balance = 0;
+        return balance;
+    }
+    *The balance is at 0*
+    
+    public int getBalance()
+    {
+        balance = 50;
+        return balance;
+    }
+    *The balance is at 50*
+#61 so the difference ive noticed is that in the pdf there "int" before price while in the editor there isnt
+Yes that version does compile
+The value of price is 0 with thie verson because of int = cost there is no value assigned to it
+#62

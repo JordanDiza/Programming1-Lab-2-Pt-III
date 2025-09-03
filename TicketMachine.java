@@ -17,13 +17,14 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int Empty;
 
     /**
      * Create a machine that issues tickets of the given price.
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        int price = cost;
         balance = 0;
         total = 0;
         
@@ -53,7 +54,7 @@ if (price > budget) {
      */
     public int getBalance()
     {
-        balance = 50;
+        balance = 0;
         return balance;
     }
 
@@ -72,6 +73,11 @@ if (price > budget) {
         }
     }
 
+public int emptyMachine() {
+    Empty = total;
+    total = 0;
+    return Empty; 
+}
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
