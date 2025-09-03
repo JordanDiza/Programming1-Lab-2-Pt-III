@@ -35,4 +35,19 @@ its like a real vending machine when you underpay they just give ur coins back
 / (division)
 #55 int saving = price * discount;
 #56 mean = total / count ;
-#57
+#57    public void affordable(int budget){
+// TODO: Write an if-statement that checks budget against price and prints
+// a message saying weather a ticket is affordable
+if (price > budget) {
+    System.out.println("Too expensive");
+} else {
+    System.out.println("Good");
+}
+}
+#58 if (price > budget) {
+    System.out.println("Too expensive. Your budget is"+ budget + "cents");
+} else {
+    System.out.println("Good");
+}
+I feel like the easier method is the one used it 57 because it is way more simple than the 58 version
+#59

@@ -26,7 +26,12 @@ public class TicketMachine
         price = cost;
         balance = 0;
         total = 0;
+        
+     
+    
+     
     }
+    
 
     /**
      * @Return The price of a ticket.
@@ -35,7 +40,14 @@ public class TicketMachine
     {
         return price;
     }
+    public void affordable(int budget){
 
+if (price > budget) {
+    System.out.println("Too expensive. Your budget is"+ budget + "cents");
+} else {
+    System.out.println("Good");
+}
+}
     /**
      * Return The amount of money already inserted for the next ticket.
      */
