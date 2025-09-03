@@ -53,6 +53,7 @@ if (price > budget) {
      */
     public int getBalance()
     {
+        balance = 50;
         return balance;
     }
 

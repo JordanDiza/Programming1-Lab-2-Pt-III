@@ -50,4 +50,5 @@ if (price > budget) {
     System.out.println("Good");
 }
 I feel like the easier method is the one used it 57 because it is way more simple than the 58 version
-#59
+#59 well if I run refundBalance id expect it to give me my money back. When the balance is at 0 there is no money to refund this theres no balance to give back
+#60
