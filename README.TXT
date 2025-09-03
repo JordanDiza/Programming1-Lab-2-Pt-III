@@ -13,7 +13,7 @@ In the terminal they are asking me to use a positive amount rather than : 0
 #49 
 public void insertMoney(int amount)
     {
-        if(amount <= 0) {
+        if(amount < 0) {
             System.out.println("Use a positive amount rather than: " + amount);
         }
         else {
@@ -67,4 +67,20 @@ I feel like the easier method is the one used it 57 because it is way more simpl
 #61 so the difference ive noticed is that in the pdf there "int" before price while in the editor there isnt
 Yes that version does compile
 The value of price is 0 with thie verson because of int = cost there is no value assigned to it
-#62
+#62  private int Empty;
+
+public int emptyMachine() {
+    Empty = total;
+    total = 0;
+    return Empty; 
+}
+
+#63 public void printTicket() {
+        int amountLeftToPay = price - balance;
+        if (amountLeftToPay < 0) {
+    
+        }else { 
+        System.out.println("You need " + amountLeftToPay + "more cents");
+    } 
+    
+#64     
